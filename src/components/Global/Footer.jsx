@@ -13,7 +13,6 @@ import {
 import Link from "next/link";
 
 const Footer = () => {
-  // A reusable component for social media links for cleaner code
   const SocialLink = ({ href, icon: Icon, ariaLabel }) => (
     <Link
       href={href}
@@ -24,7 +23,6 @@ const Footer = () => {
     </Link>
   );
 
-  // A reusable component for footer navigation links
   const FooterLink = ({ href, children }) => (
     <li>
       <Link
@@ -38,20 +36,17 @@ const Footer = () => {
 
   return (
     <footer className="bg-slate-900 text-gray-300">
-      <div className="container mx-auto px-1 pt-16 pb-8">
-        {/* Main grid with a more balanced 4-column layout */}
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {/* Column 1: About the Company */}
-          <div className="space-y-4 md:col-span-2 lg:col-span-1">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8">
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 mb-12">
+          {/* Column 1 */}
+          <div className="space-y-4 text-center md:text-left flex flex-col items-center md:items-start">
             <Image
-              src="/logo.png" // 👉 Your logo path
+              src="/logo.png"
               alt="CDS Logo"
               width={160}
               height={54}
               priority
-              // This class inverts the logo color to make it visible on a dark background.
-              // For best results, use a dedicated white/light version of your logo.
-              
             />
             <p className="text-sm leading-relaxed">
               Central Data Systems is a leading provider of innovative IT
@@ -60,8 +55,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
+          {/* Column 2 */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-4">
               Quick Links
             </h3>
@@ -73,14 +68,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Official Info */}
-          <div>
+          {/* Column 3 */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-4">
               Official Info
             </h3>
             <div className="space-y-4">
-              <p className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-blue-400 mt-1 flex-shrink-0" />
+              <p className="flex flex-col items-center md:items-start gap-2">
+                <MapPin className="h-5 w-5 text-blue-400" />
                 <span>
                   2nd Floor, Grey Rock, 10, 24th Main Rd, 1st Phase,
                   <br />
@@ -89,14 +84,14 @@ const Footer = () => {
               </p>
               <a
                 href="tel:+918061289800"
-                className="flex items-center gap-3 transition-colors duration-300 hover:text-blue-400"
+                className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
               >
                 <Phone className="h-5 w-5 text-blue-400" />
                 <span>+91 12345 9800</span>
               </a>
               <a
                 href="mailto:info@cdspl.com"
-                className="flex items-center gap-3 transition-colors duration-300 hover:text-blue-400"
+                className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
                 <span>info@cdspl.com</span>
@@ -104,8 +99,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 4: Newsletter & Socials */}
-          <div>
+          {/* Column 4 */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-4">
               Join Our Newsletter
             </h3>
@@ -114,7 +109,7 @@ const Footer = () => {
             </p>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="flex items-center gap-2 mb-4"
+              className="flex flex-col sm:flex-row items-center gap-2 mb-4"
             >
               <label htmlFor="email-subscribe" className="sr-only">
                 Your Email
@@ -134,7 +129,7 @@ const Footer = () => {
                 <Send className="h-5 w-5" />
               </button>
             </form>
-            <div className="flex gap-2">
+            <div className="flex justify-center md:justify-start gap-2">
               <SocialLink href="#" icon={Facebook} ariaLabel="Facebook" />
               <SocialLink href="#" icon={Twitter} ariaLabel="Twitter" />
               <SocialLink href="#" icon={Linkedin} ariaLabel="LinkedIn" />
@@ -142,13 +137,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright and Policy Links */}
+        {/* Bottom Bar */}
         <div className="flex flex-col items-center border-t border-slate-800 pt-6 text-sm md:flex-row md:justify-between">
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-center md:text-left">
             © {new Date().getFullYear()} CDS – Central Data Systems. All rights
             reserved.
           </p>
-          
+
           <div className="mt-4 flex gap-6 md:mt-0">
             <Link
               href="/privacy-policy"
@@ -164,11 +159,14 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div>
-            <Link href="https://rbshstudio.com/"
-            className="transition-colors duration-300 hover:text-blue-400 flex justify-center pt-6">
-                Powered By RBSH Studio
-            </Link>
+
+        <div className="flex justify-center pt-6">
+          <Link
+            href="https://rbshstudio.com/"
+            className="transition-colors duration-300 hover:text-blue-400"
+          >
+            Powered By RBSH Studio
+          </Link>
         </div>
       </div>
     </footer>
