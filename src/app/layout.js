@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AnimatedChatbot from "@/components/Global/AnimatedChatbot";
 
 
 export const metadata = {
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <AnimatedChatbot />
       </body>
     </html>
   );
