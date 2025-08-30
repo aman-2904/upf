@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1756553117618,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756554852231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n import HeroSection from \"@/components/Home/HeroSection\";\n import ServicesSection from \"@/components/Home/ServicesSection\";\n import StatsSection from \"@/components/Home/StatsSection\";\n import WhyChoose from \"@/components/Home/WhyChoose\";\n+import { TestTubesIcon } from \"lucide-react\";\n \n export default function Home() {\n   return (\n     <>\n@@ -25,8 +26,9 @@\n       <Extra/>\n       <section id=\"stats\">\n         <StatsSection />\n       </section>\n+      <TestTubesIcon/>\n       <section id=\"contact\">\n         <CTASection />\n       </section>\n       <Footer />\n"
+                },
+                {
+                    "date": 1756554872531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import Extra from \"@/components/Home/Extra\";\n import HeroSection from \"@/components/Home/HeroSection\";\n import ServicesSection from \"@/components/Home/ServicesSection\";\n import StatsSection from \"@/components/Home/StatsSection\";\n+import Testimonials from \"@/components/Home/Testemonials\";\n import WhyChoose from \"@/components/Home/WhyChoose\";\n import { TestTubesIcon } from \"lucide-react\";\n \n export default function Home() {\n@@ -26,9 +27,9 @@\n       <Extra/>\n       <section id=\"stats\">\n         <StatsSection />\n       </section>\n-      <TestTubesIcon/>\n+      <Testimonials/>\n       <section id=\"contact\">\n         <CTASection />\n       </section>\n       <Footer />\n"
                 }
             ],
             "date": 1756553117618,

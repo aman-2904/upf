@@ -6,7 +6,9 @@ import Extra from "@/components/Home/Extra";
 import HeroSection from "@/components/Home/HeroSection";
 import ServicesSection from "@/components/Home/ServicesSection";
 import StatsSection from "@/components/Home/StatsSection";
+import Testimonials from "@/components/Home/Testemonials";
 import WhyChoose from "@/components/Home/WhyChoose";
+import { TestTubesIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -26,6 +28,7 @@ export default function Home() {
       <section id="stats">
         <StatsSection />
       </section>
+      <Testimonials/>
       <section id="contact">
         <CTASection />
       </section>

@@ -114,15 +114,15 @@ const WhyChoose = () => {
 
           {/* Right Column: Video and Contact Info */}
           <div className="w-full lg:w-1/2 mt-16 lg:mt-0">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm">
               <img
-                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/1.png"
                 alt="Data Center"
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0 hover:opacity-100">
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0">
                 <button
-                  className="group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300 hover:bg-opacity-30 hover:scale-110"
+                  className="group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300"
                   aria-label="Play video"
                 >
                   <svg

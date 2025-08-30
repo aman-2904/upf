@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1756552771907,
@@ -20,6 +20,14 @@
                 {
                     "date": 1756552799617,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n             {/* Overlapping Contact Cards */}\n             <div className=\"relative z-10 -mt-16 flex flex-col sm:flex-row justify-end items-stretch drop-shadow-lg\">\n                 <div className=\"bg-blue-800 text-white p-6 rounded-t-2xl sm:rounded-l-2xl sm:rounded-tr-none shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 flex-1\">\n                     <h4 className=\"font-semibold text-blue-200\">CALL FOR A QUOTE:</h4>\n-                    <p className=\"text-2xl font-bold\">9035300045</p>\n+                    <p className=\"text-xl font-bold\">9035300045</p>\n                 </div>\n                 <div className=\"bg-white text-gray-800 p-6 rounded-b-2xl sm:rounded-r-2xl sm:rounded-bl-none shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 flex-1\">\n                     <h4 className=\"font-semibold text-gray-500\">EMAIL ADDRESS:</h4>\n                     <p className=\"text-lg font-bold\">sales@upflair.in</p>\n"
+                },
+                {
+                    "date": 1756554628421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,11 +113,11 @@\n           </div>\n \n           {/* Right Column: Video and Contact Info */}\n           <div className=\"w-full lg:w-1/2 mt-16 lg:mt-0\">\n-            <div className=\"relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105\">\n+            <div className=\"relative rounded-2xl overflow-hidden shadow-sm\">\n               <img\n-                src=\"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n+                src=\"/1.png\"\n                 alt=\"Data Center\"\n                 className=\"w-full h-auto\"\n               />\n               <div className=\"absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0 hover:opacity-100\">\n"
+                },
+                {
+                    "date": 1756554693759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,11 +119,11 @@\n                 src=\"/1.png\"\n                 alt=\"Data Center\"\n                 className=\"w-full h-auto\"\n               />\n-              <div className=\"absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0 hover:opacity-100\">\n+              <div className=\"absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0\">\n                 <button\n-                  className=\"group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300 hover:bg-opacity-30 hover:scale-110\"\n+                  className=\"group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300\"\n                   aria-label=\"Play video\"\n                 >\n                   <svg\n                     className=\"h-12 w-12 text-white\"\n"
                 }
             ],
             "date": 1756552771907,
