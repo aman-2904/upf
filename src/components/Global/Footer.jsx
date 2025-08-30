@@ -74,25 +74,24 @@ const Footer = () => {
               Official Info
             </h3>
             <div className="space-y-4">
-            <p className="flex flex-col items-center md:items-start gap-2">
-  <MapPin className="h-5 w-5 text-blue-400" />
-  <span>
-    Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III, 
-    <br />
-    Bengaluru, Bengaluru Urban, Karnataka, 560102
-  </span>
-</p>
-
+              <div className="flex items-center gap-3 justify-center md:justify-start">
+                <MapPin className="h-7 w-10 text-blue-400" />
+                <span>
+                  Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III,
+                  <br />
+                  Bengaluru, Bengaluru Urban, Karnataka, 560102
+                </span>
+              </div>
               <a
                 href="tel:+919035300045"
-                className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
+                className="flex items-center gap-3 justify-center md:justify-start transition-colors duration-300 hover:text-blue-400"
               >
                 <Phone className="h-5 w-5 text-blue-400" />
                 <span>+91 9035300045</span>
               </a>
               <a
                 href="mailto:info@cdspl.com"
-                className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
+                className="flex items-center gap-3 justify-center md:justify-start transition-colors duration-300 hover:text-blue-400"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
                 <span>sales@upflair.in</span>
@@ -113,13 +112,13 @@ const Footer = () => {
 
           <div className="mt-4 flex gap-6 md:mt-0">
             <Link
-              href="/privacy-policy"
+              href=""
               className="transition-colors duration-300 hover:text-blue-400"
             >
               Privacy Policy
             </Link>
             <Link
-              href="/terms-of-service"
+              href=""
               className="transition-colors duration-300 hover:text-blue-400"
             >
               Terms of Service

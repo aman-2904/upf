@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1756553748643,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756555985317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,27 +73,26 @@\n             <h3 className=\"text-lg font-semibold text-white mb-4\">\n               Official Info\n             </h3>\n             <div className=\"space-y-4\">\n-            <p className=\"flex flex-col items-center md:items-start gap-2\">\n-  <MapPin className=\"h-5 w-5 text-blue-400\" />\n-  <span>\n-    Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III, \n-    <br />\n-    Bengaluru, Bengaluru Urban, Karnataka, 560102\n-  </span>\n-</p>\n-\n+              <div className=\"flex items-center gap-3 justify-center md:justify-start\">\n+                <MapPin className=\"h-5 w-5 text-blue-400\" />\n+                <span>\n+                  Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III,\n+                  <br />\n+                  Bengaluru, Bengaluru Urban, Karnataka, 560102\n+                </span>\n+              </div>\n               <a\n                 href=\"tel:+919035300045\"\n-                className=\"flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400\"\n+                className=\"flex items-center gap-3 justify-center md:justify-start transition-colors duration-300 hover:text-blue-400\"\n               >\n                 <Phone className=\"h-5 w-5 text-blue-400\" />\n                 <span>+91 9035300045</span>\n               </a>\n               <a\n                 href=\"mailto:info@cdspl.com\"\n-                className=\"flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400\"\n+                className=\"flex items-center gap-3 justify-center md:justify-start transition-colors duration-300 hover:text-blue-400\"\n               >\n                 <Mail className=\"h-5 w-5 text-blue-400\" />\n                 <span>sales@upflair.in</span>\n               </a>\n"
+                },
+                {
+                    "date": 1756555994056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n               Official Info\n             </h3>\n             <div className=\"space-y-4\">\n               <div className=\"flex items-center gap-3 justify-center md:justify-start\">\n-                <MapPin className=\"h-5 w-5 text-blue-400\" />\n+                <MapPin className=\"h-7 w-7 text-blue-400\" />\n                 <span>\n                   Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III,\n                   <br />\n                   Bengaluru, Bengaluru Urban, Karnataka, 560102\n"
+                },
+                {
+                    "date": 1756555999587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n               Official Info\n             </h3>\n             <div className=\"space-y-4\">\n               <div className=\"flex items-center gap-3 justify-center md:justify-start\">\n-                <MapPin className=\"h-7 w-7 text-blue-400\" />\n+                <MapPin className=\"h-7 w-10 text-blue-400\" />\n                 <span>\n                   Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III,\n                   <br />\n                   Bengaluru, Bengaluru Urban, Karnataka, 560102\n"
+                },
+                {
+                    "date": 1756556026728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n           </p>\n \n           <div className=\"mt-4 flex gap-6 md:mt-0\">\n             <Link\n-              href=\"/privacy-policy\"\n+              href=\"\"\n               className=\"transition-colors duration-300 hover:text-blue-400\"\n             >\n               Privacy Policy\n             </Link>\n"
                 }
             ],
             "date": 1756553748643,

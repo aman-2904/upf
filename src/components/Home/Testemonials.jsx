@@ -42,6 +42,18 @@ const testimonials = [
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState('right');
+  const [cardWidth, setCardWidth] = useState(50);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setCardWidth(window.innerWidth < 640 ? 100 : 50);
+    };
+    if (typeof window !== 'undefined') {
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
@@ -101,12 +113,12 @@ const Testimonials = () => {
         <div className="relative max-w-7xl mx-auto">
           <div className="overflow-hidden">
             <div 
-              className="flex "
-              style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+              className="flex flex-col sm:flex-row"
+              style={{ transform: `translateX(-${currentIndex * cardWidth}%)` }}
             >
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="w-1/2 flex-shrink-0 px-4">
-                  <div className="bg-gray-100 rounded-2xl  p-8 h-full  ">
+                <div key={index} className="w-full sm:w-1/2 flex-shrink-0 px-2 sm:px-4 mb-6 sm:mb-0">
+                  <div className="bg-gray-100 rounded-2xl p-4 sm:p-8 h-full">
                     {/* Quote Icon */}
                     <div className="mb-6">
                       <svg 

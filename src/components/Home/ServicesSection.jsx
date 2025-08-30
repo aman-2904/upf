@@ -123,7 +123,7 @@ export const ServicesSection = () => {
               className="group relative transform cursor-pointer rounded-2xl border border-slate-200 bg-white p-8 shadow-md  hover:shadow-2xl hover:shadow-blue-500/30 hover:bg-blue-600"
             >
               {/* Icon */}
-              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-slate-100 transition-colors duration-300 group-hover:bg-blue-500">
+              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-slate-100 transition-colors duration-300 group-hover:bg-blue-500 mx-auto">
                 {service.icon}
               </div>
 
