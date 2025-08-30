@@ -48,7 +48,7 @@ const statsData = [
         />
       </svg>
     ),
-    value: "30+",
+    value: "12+",
     label: "Years of Service",
   },
   {

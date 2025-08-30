@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Home/StatsSection.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756556586661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756556586661,
+            "name": "Commit-0",
+            "content": "\"use client\";\nimport React from \"react\";\n\n// Data for the stats section. This makes it easy to update the values and text.\nconst statsData = [\n  {\n    icon: (\n      <svg\n        className=\"h-16 w-16 text-green-600\"\n        fill=\"none\"\n        viewBox=\"0 0 24 24\"\n        stroke=\"currentColor\"\n        strokeWidth={1}\n      >\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z\"\n        />\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M4 6h16M4 9h16M4 12h16\"\n        />\n      </svg>\n    ),\n    value: \"10,000+\",\n    label: \"Customer's Satisfied\",\n  },\n  {\n    icon: (\n      <svg\n        className=\"h-16 w-16 text-green-600\"\n        fill=\"none\"\n        viewBox=\"0 0 24 24\"\n        stroke=\"currentColor\"\n        strokeWidth={1}\n      >\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4\"\n        />\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M9 12l2 2 4-4m6 8l-6-3.5L5 21\"\n        />\n      </svg>\n    ),\n    value: \"12+\",\n    label: \"Years of Service\",\n  },\n  {\n    icon: (\n      <svg\n        className=\"h-16 w-16 text-green-600\"\n        fill=\"none\"\n        viewBox=\"0 0 24 24\"\n        stroke=\"currentColor\"\n        strokeWidth={1}\n      >\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"\n        />\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"M15 12a3 3 0 11-6 0 3 3 0 016 0z\"\n        />\n      </svg>\n    ),\n    value: \"300+\",\n    label: \"Projects Completed\",\n  },\n];\n\nconst StatsSection = () => {\n  return (\n    <section className=\"bg-white py-24 sm:py-32 font-sans container mx-auto\">\n      <div className=\" mx-auto max-w-7xl \">\n        <div className=\"grid grid-cols-1 gap-y-16 text-center lg:grid-cols-3\">\n          {statsData.map((stat, index) => (\n            <div\n              key={index}\n              className=\"group flex flex-col items-center gap-y-4 transform transition-transform duration-300 hover:-translate-y-2\"\n            >\n              {/* Icon */}\n              <div className=\"transition-transform duration-300 group-hover:scale-110\">\n                {stat.icon}\n              </div>\n\n              {/* Stat Value */}\n              <p className=\"text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl font-serif\">\n                {stat.value}\n              </p>\n\n              {/* Stat Label */}\n              <p className=\"text-lg leading-7 text-gray-600\">{stat.label}</p>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default StatsSection;\n"
+        }
+    ]
+}

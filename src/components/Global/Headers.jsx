@@ -16,8 +16,8 @@ const Headers = () => {
                         <Image
                             src="/logo.png"   // 👉 put your logo image in the /public folder as logo.png
                             alt="CDS Logo"
-                            width={120}       // adjust size as needed
-                            height={30}
+                            width={140}       // adjust size as needed
+                            height={40}
                             priority
                         />
                     </Link>

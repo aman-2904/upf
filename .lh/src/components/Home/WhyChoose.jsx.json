@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1756552771907,
@@ -28,6 +28,14 @@
                 {
                     "date": 1756554693759,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,11 +119,11 @@\n                 src=\"/1.png\"\n                 alt=\"Data Center\"\n                 className=\"w-full h-auto\"\n               />\n-              <div className=\"absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0 hover:opacity-100\">\n+              <div className=\"absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 opacity-0\">\n                 <button\n-                  className=\"group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300 hover:bg-opacity-30 hover:scale-110\"\n+                  className=\"group flex h-24 w-24 items-center justify-center rounded-full bg-white bg-opacity-20 transition-all duration-300\"\n                   aria-label=\"Play video\"\n                 >\n                   <svg\n                     className=\"h-12 w-12 text-white\"\n"
+                },
+                {
+                    "date": 1756556758568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n     <section className=\"font-sans py-20 bg-slate-50 relative overflow-hidden\">\n       {/* Subtle background pattern */}\n       <div \n         className=\"absolute inset-0 bg-repeat bg-center opacity-5\"\n-        style={{backgroundImage: \"url('data:image/svg+xml,%3Csvg width=\\\"40\\\" height=\\\"40\\\" viewBox=\\\"0 0 40 40\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"%3E%3Cg fill=\\\"%239C92AC\\\" fill-opacity=\\\"0.4\\\" fill-rule=\\\"evenodd\\\"%3E%3Cpath d=\\\"M0 40L40 0H20L0 20M40 40V20L20 40\\\"/%3E%3C/g%3E%3C/svg%3E')\"}}\n+\n       ></div>\n \n       <div className=\"container mx-auto px-4 relative z-10\">\n         <div className=\"flex flex-wrap items-center\">\n"
+                },
+                {
+                    "date": 1756556786551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n \n // This is the main component with enhanced styling\n const WhyChoose = () => {\n   return (\n-    <section className=\"font-sans py-20 bg-slate-50 relative overflow-hidden\">\n+    <section className=\"font-sans py-20 bg-white relative overflow-hidden\">\n       {/* Subtle background pattern */}\n       <div \n         className=\"absolute inset-0 bg-repeat bg-center opacity-5\"\n \n"
                 }
             ],
             "date": 1756552771907,

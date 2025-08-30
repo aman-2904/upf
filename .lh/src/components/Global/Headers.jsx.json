@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1756552663139,
@@ -20,6 +20,18 @@
                 {
                     "date": 1756552694149,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n const Headers = () => {\n     return (\n         <section className=\"bg-white  w-full z-50 left-0 border-b sticky top-0 \">\n-            <header className=\"w-full flex items-center justify-between container mx-auto py-4  bg-white\">\n+            <header className=\"w-full flex items-center justify-between container mx-auto py-6 bg-white\">\n                 {/* Left Logo Section */}\n \n                 <div className=\"flex items-center gap-3\">\n                     {/* ✅ Replace text with an image */}\n"
+                },
+                {
+                    "date": 1756556600030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                         <Image\n                             src=\"/logo.png\"   // 👉 put your logo image in the /public folder as logo.png\n                             alt=\"CDS Logo\"\n                             width={120}       // adjust size as needed\n-                            height={30}\n+                            height={40}\n                             priority\n                         />\n                     </Link>\n                 </div>\n"
+                },
+                {
+                    "date": 1756556607824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                         <Image\n                             src=\"/logo.png\"   // 👉 put your logo image in the /public folder as logo.png\n                             alt=\"CDS Logo\"\n                             width={120}       // adjust size as needed\n-                            height={40}\n+                            height={80}\n                             priority\n                         />\n                     </Link>\n                 </div>\n"
+                },
+                {
+                    "date": 1756556617550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n                     <Link href=\"/\">\n                         <Image\n                             src=\"/logo.png\"   // 👉 put your logo image in the /public folder as logo.png\n                             alt=\"CDS Logo\"\n-                            width={120}       // adjust size as needed\n-                            height={80}\n+                            width={140}       // adjust size as needed\n+                            height={40}\n                             priority\n                         />\n                     </Link>\n                 </div>\n"
                 }
             ],
             "date": 1756552663139,

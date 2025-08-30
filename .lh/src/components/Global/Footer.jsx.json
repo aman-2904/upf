@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1756553748643,
@@ -24,6 +24,26 @@
                 {
                     "date": 1756556026728,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n           </p>\n \n           <div className=\"mt-4 flex gap-6 md:mt-0\">\n             <Link\n-              href=\"/privacy-policy\"\n+              href=\"\"\n               className=\"transition-colors duration-300 hover:text-blue-400\"\n             >\n               Privacy Policy\n             </Link>\n"
+                },
+                {
+                    "date": 1756556446500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     </li>\n   );\n \n   return (\n-    <footer className=\"bg-slate-900 text-gray-300\">\n+    <footer className=\"bg-slate-800 text-gray-300\">\n       <div className=\"container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8\">\n         {/* Main Grid */}\n         <div className=\"grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12\">\n           {/* Column 1 */}\n@@ -117,9 +117,9 @@\n             >\n               Privacy Policy\n             </Link>\n             <Link\n-              href=\"/terms-of-service\"\n+              href=\"\"\n               className=\"transition-colors duration-300 hover:text-blue-400\"\n             >\n               Terms of Service\n             </Link>\n"
+                },
+                {
+                    "date": 1756556453101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     </li>\n   );\n \n   return (\n-    <footer className=\"bg-slate-800 text-gray-300\">\n+    <footer className=\"bg-slate-600 text-gray-300\">\n       <div className=\"container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8\">\n         {/* Main Grid */}\n         <div className=\"grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12\">\n           {/* Column 1 */}\n"
+                },
+                {
+                    "date": 1756556461269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     </li>\n   );\n \n   return (\n-    <footer className=\"bg-slate-600 text-gray-300\">\n+    <footer className=\"bg-slate-400 text-gray-300\">\n       <div className=\"container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8\">\n         {/* Main Grid */}\n         <div className=\"grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12\">\n           {/* Column 1 */}\n"
+                },
+                {
+                    "date": 1756556482534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     </li>\n   );\n \n   return (\n-    <footer className=\"bg-slate-400 text-gray-300\">\n+    <footer className=\"bg-slate-700 text-gray-300\">\n       <div className=\"container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8\">\n         {/* Main Grid */}\n         <div className=\"grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12\">\n           {/* Column 1 */}\n"
+                },
+                {
+                    "date": 1756556511035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     </li>\n   );\n \n   return (\n-    <footer className=\"bg-slate-700 text-gray-300\">\n+    <footer className=\"bg-slate-900 text-gray-300\">\n       <div className=\"container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8\">\n         {/* Main Grid */}\n         <div className=\"grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12\">\n           {/* Column 1 */}\n"
                 }
             ],
             "date": 1756553748643,
