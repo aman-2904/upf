@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/Global/Headers.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1756552663139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756552670408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n const Headers = () => {\n     return (\n         <section className=\"bg-white  w-full z-50 left-0 border-b sticky top-0 \">\n-            <header className=\"w-full flex items-center justify-between container mx-auto py-2  bg-white\">\n+            <header className=\"w-full flex items-center justify-between container mx-auto py-4  bg-white\">\n                 {/* Left Logo Section */}\n \n                 <div className=\"flex items-center gap-3\">\n                     {/* ✅ Replace text with an image */}\n"
+                },
+                {
+                    "date": 1756552680331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     </Link>\n                 </div>\n \n                 {/* Center Navigation */}\n-                <nav className=\"hidden md:flex items-center gap-8 text-[16px] font-medium text-[#0a0a23]\">\n+                <nav className=\"hidden md:flex items-center gap-8 text-[18px] font-medium text-[#0a0a23]\">\n                     <a href=\"#home\" className=\"hover:text-blue-700 transition\">\n                         Home\n                     </a>\n \n"
+                },
+                {
+                    "date": 1756552694149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n const Headers = () => {\n     return (\n         <section className=\"bg-white  w-full z-50 left-0 border-b sticky top-0 \">\n-            <header className=\"w-full flex items-center justify-between container mx-auto py-4  bg-white\">\n+            <header className=\"w-full flex items-center justify-between container mx-auto py-6 bg-white\">\n                 {/* Left Logo Section */}\n \n                 <div className=\"flex items-center gap-3\">\n                     {/* ✅ Replace text with an image */}\n"
+                }
+            ],
+            "date": 1756552663139,
+            "name": "Commit-0",
+            "content": "\"use client\";\nimport React from \"react\";\nimport Link from \"next/link\";\nimport Image from \"next/image\"; // ✅ Import Next.js Image\nimport { ChevronDown } from \"lucide-react\";\n\nconst Headers = () => {\n    return (\n        <section className=\"bg-white  w-full z-50 left-0 border-b sticky top-0 \">\n            <header className=\"w-full flex items-center justify-between container mx-auto py-2  bg-white\">\n                {/* Left Logo Section */}\n\n                <div className=\"flex items-center gap-3\">\n                    {/* ✅ Replace text with an image */}\n                    <Link href=\"/\">\n                        <Image\n                            src=\"/logo.png\"   // 👉 put your logo image in the /public folder as logo.png\n                            alt=\"CDS Logo\"\n                            width={120}       // adjust size as needed\n                            height={30}\n                            priority\n                        />\n                    </Link>\n                </div>\n\n                {/* Center Navigation */}\n                <nav className=\"hidden md:flex items-center gap-8 text-[16px] font-medium text-[#0a0a23]\">\n                    <a href=\"#home\" className=\"hover:text-blue-700 transition\">\n                        Home\n                    </a>\n\n                    <a href=\"#services\" className=\"hover:text-blue-700 transition cursor-pointer\">\n                        Services\n                    </a>\n\n                    <a href=\"#about\" className=\"hover:text-blue-700 transition cursor-pointer\">\n                        About Us\n                    </a>\n\n                    <a href=\"#stats\" className=\"hover:text-blue-700 transition cursor-pointer\">\n                        Stats\n                    </a>\n\n                    <a href=\"#contact\" className=\"hover:text-blue-700 transition\">\n                        Contact Us\n                    </a>\n                </nav>\n\n                {/* Right Contact Now Button */}\n                <div>\n                    <a\n                        href=\"#contact\"\n                        className=\"bg-[#0a1f55] text-white px-6 py-2 rounded-full shadow-md hover:bg-[#132b74] transition flex items-center gap-2\"\n                    >\n                        Contact now →\n                    </a>\n                </div>\n            </header>\n        </section>\n\n    );\n};\n\nexport default Headers;\n"
+        }
+    ]
+}

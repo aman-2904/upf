@@ -6,8 +6,8 @@ import { ChevronDown } from "lucide-react";
 
 const Headers = () => {
     return (
-        <section className="bg-white relative w-full z-50 left-0 border-b sticky top-0 ">
-            <header className="w-full flex items-center justify-between container mx-auto py-2  bg-white">
+        <section className="bg-white  w-full z-50 left-0 border-b sticky top-0 ">
+            <header className="w-full flex items-center justify-between container mx-auto py-6 bg-white">
                 {/* Left Logo Section */}
 
                 <div className="flex items-center gap-3">
@@ -24,7 +24,7 @@ const Headers = () => {
                 </div>
 
                 {/* Center Navigation */}
-                <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium text-[#0a0a23]">
+                <nav className="hidden md:flex items-center gap-8 text-[18px] font-medium text-[#0a0a23]">
                     <a href="#home" className="hover:text-blue-700 transition">
                         Home
                     </a>

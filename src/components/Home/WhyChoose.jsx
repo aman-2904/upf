@@ -140,11 +140,11 @@ const WhyChoose = () => {
             <div className="relative z-10 -mt-16 flex flex-col sm:flex-row justify-end items-stretch drop-shadow-lg">
                 <div className="bg-blue-800 text-white p-6 rounded-t-2xl sm:rounded-l-2xl sm:rounded-tr-none shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 flex-1">
                     <h4 className="font-semibold text-blue-200">CALL FOR A QUOTE:</h4>
-                    <p className="text-2xl font-bold">9696086262</p>
+                    <p className="text-xl font-bold">9035300045</p>
                 </div>
                 <div className="bg-white text-gray-800 p-6 rounded-b-2xl sm:rounded-r-2xl sm:rounded-bl-none shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 flex-1">
                     <h4 className="font-semibold text-gray-500">EMAIL ADDRESS:</h4>
-                    <p className="text-lg font-bold">info@upflair.com</p>
+                    <p className="text-lg font-bold">sales@upflair.in</p>
                 </div>
             </div>
           </div>

@@ -88,7 +88,7 @@ const Footer = () => {
                 className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
               >
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span>++91 9035300045</span>
+                <span>+91 9035300045</span>
               </a>
               <a
                 href="mailto:info@cdspl.com"
