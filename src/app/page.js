@@ -10,14 +10,24 @@ import WhyChoose from "@/components/Home/WhyChoose";
 export default function Home() {
   return (
     <>
-    
-    <Headers/>
-    <HeroSection/>
-    <ServicesSection/>
-    <WhyChoose/>
-    <StatsSection/>
-    <CTASection/>
-    <Footer/>
+
+      <Headers />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <section id="services">
+        <ServicesSection />
+      </section>
+      <section id="about">
+        <WhyChoose />
+      </section>
+      <section id="stats">
+        <StatsSection />
+      </section>
+      <section id="contact">
+        <CTASection />
+      </section>
+      <Footer />
     </>
   );
 }

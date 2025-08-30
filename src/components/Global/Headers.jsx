@@ -25,38 +25,35 @@ const Headers = () => {
 
                 {/* Center Navigation */}
                 <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium text-[#0a0a23]">
-                    <Link href="/" className="hover:text-blue-700 transition">
+                    <a href="#home" className="hover:text-blue-700 transition">
                         Home
-                    </Link>
+                    </a>
 
-                    <div className="flex items-center gap-1 cursor-pointer hover:text-blue-700 transition">
-                        <span>Solutions</span>
+                    <a href="#services" className="hover:text-blue-700 transition cursor-pointer">
+                        Services
+                    </a>
 
-                    </div>
+                    <a href="#about" className="hover:text-blue-700 transition cursor-pointer">
+                        About Us
+                    </a>
 
-                    <div className="flex items-center gap-1 cursor-pointer hover:text-blue-700 transition">
-                        <span>Services</span>
+                    <a href="#stats" className="hover:text-blue-700 transition cursor-pointer">
+                        Stats
+                    </a>
 
-                    </div>
-
-                    <div className="flex items-center gap-1 cursor-pointer hover:text-blue-700 transition">
-                        <span>About Us</span>
-
-                    </div>
-
-                    <Link href="/contact" className="hover:text-blue-700 transition">
+                    <a href="#contact" className="hover:text-blue-700 transition">
                         Contact Us
-                    </Link>
+                    </a>
                 </nav>
 
                 {/* Right Contact Now Button */}
                 <div>
-                    <Link
-                        href="/contact"
+                    <a
+                        href="#contact"
                         className="bg-[#0a1f55] text-white px-6 py-2 rounded-full shadow-md hover:bg-[#132b74] transition flex items-center gap-2"
                     >
                         Contact now →
-                    </Link>
+                    </a>
                 </div>
             </header>
         </section>

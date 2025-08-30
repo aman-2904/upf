@@ -38,7 +38,7 @@ const Footer = () => {
     <footer className="bg-slate-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-8">
         {/* Main Grid */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {/* Column 1 */}
           <div className="space-y-4 text-center md:text-left flex flex-col items-center md:items-start">
             <Image
@@ -74,67 +74,34 @@ const Footer = () => {
               Official Info
             </h3>
             <div className="space-y-4">
-              <p className="flex flex-col items-center md:items-start gap-2">
-                <MapPin className="h-5 w-5 text-blue-400" />
-                <span>
-                  2nd Floor, Grey Rock, 10, 24th Main Rd, 1st Phase,
-                  <br />
-                  J. P. Nagar, Bengaluru, Karnataka - 560078.
-                </span>
-              </p>
+            <p className="flex flex-col items-center md:items-start gap-2">
+  <MapPin className="h-5 w-5 text-blue-400" />
+  <span>
+    Ground floor, Srishyalaya No.523 A, 19th Main Service Road, HSR Layout Sector III, 
+    <br />
+    Bengaluru, Bengaluru Urban, Karnataka, 560102
+  </span>
+</p>
+
               <a
-                href="tel:+918061289800"
+                href="tel:+919035300045"
                 className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
               >
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span>+91 12345 9800</span>
+                <span>++91 9035300045</span>
               </a>
               <a
                 href="mailto:info@cdspl.com"
                 className="flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 hover:text-blue-400"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span>info@cdspl.com</span>
+                <span>sales@upflair.in</span>
               </a>
             </div>
           </div>
 
           {/* Column 4 */}
-          <div className="text-center md:text-left">
-            <h3 className="text-lg font-semibold text-white mb-4">
-              Join Our Newsletter
-            </h3>
-            <p className="mb-4 text-sm">
-              Get the latest updates and news delivered straight to your inbox.
-            </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col sm:flex-row items-center gap-2 mb-4"
-            >
-              <label htmlFor="email-subscribe" className="sr-only">
-                Your Email
-              </label>
-              <input
-                id="email-subscribe"
-                type="email"
-                placeholder="Your email"
-                className="w-full rounded-md border border-slate-700 bg-slate-800 px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-              <button
-                type="submit"
-                className="rounded-md bg-blue-600 p-2 text-white transition-transform duration-300 hover:scale-105 hover:bg-blue-700"
-                aria-label="Subscribe to newsletter"
-              >
-                <Send className="h-5 w-5" />
-              </button>
-            </form>
-            <div className="flex justify-center md:justify-start gap-2">
-              <SocialLink href="#" icon={Facebook} ariaLabel="Facebook" />
-              <SocialLink href="#" icon={Twitter} ariaLabel="Twitter" />
-              <SocialLink href="#" icon={Linkedin} ariaLabel="LinkedIn" />
-            </div>
-          </div>
+       
         </div>
 
         {/* Bottom Bar */}
