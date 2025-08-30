@@ -3,38 +3,45 @@ import React, { useState } from 'react';
 
 const testimonials = [
   {
-    name: "Rohan Verma",
-    review: "Upflair has transformed our business with innovative power solutions and exceptional customer service. Their team’s expertise and dedication helped us achieve greater efficiency and reliability. Highly recommended for any organization seeking top-notch technology and support.",
-    rating: 5
-  },
-  {
-    name: "Vishnu K N",
-    review: "I came to know about Upflair when I searched for vendors of APS UPS. Upflair provided the UPS at a low price in less lead time, compared with others. I have ordered UPS for my WFH requirement. The delivery happened within a week. The ordering, status update and delivery are done very professionally.",
-    rating: 5
-  },
-  {
-    name: "Ambadas Bhore",
-    review: "I was looking for a UPS for WiFi and modem router. I searched Amazon and Flipkart, but they could not provide me suitable options. Upflair delivered me UPS in a day, Thanks!",
-    rating: 5
-  },
-  {
-    name: "Rajesh Kumar",
-    review: "Upflair provided us with reliable power conditioning solutions that have significantly improved our data center's uptime. Their technical expertise and prompt service support are exceptional.",
+    name: "Rajesh Mehta",
+    position: "CEO, TechVision Solutions",
+    review: "UP Flair delivered an exceptional e-commerce platform that increased our online sales by 150% within 6 months. Their team's technical expertise and innovative approach to digital transformation is truly remarkable. The project was completed on time and within budget.",
     rating: 5
   },
   {
     name: "Priya Sharma",
-    review: "The customized power supply solutions from Upflair have helped us reduce operational costs by 30%. Their team understood our requirements perfectly and delivered beyond expectations.",
+    position: "Marketing Director, GreenTech Industries",
+    review: "Working with UP Flair was a game-changer for our digital marketing strategy. They developed a comprehensive web application and mobile app that streamlined our operations. Their attention to detail and customer-centric approach sets them apart from other agencies.",
     rating: 5
   },
   {
-    name: "Arun Patel",
-    review: "Outstanding service quality! Upflair's preventive maintenance program has kept our power systems running smoothly for over 3 years. Highly recommended for industrial applications.",
+    name: "Amit Kumar",
+    position: "Founder, StartupHub",
+    review: "UP Flair transformed our startup idea into a fully functional digital platform. Their expertise in modern web technologies and mobile app development helped us launch successfully. The team's dedication and innovative solutions exceeded our expectations.",
     rating: 5
   },
   {
-    name: "Sneha Gupta",
-    review: "From consultation to installation, Upflair demonstrated professionalism at every step. Their eco-friendly power solutions align perfectly with our sustainability goals.",
+    name: "Neha Patel",
+    position: "Operations Manager, LogiFlow Corp",
+    review: "The custom software solution developed by UP Flair has revolutionized our supply chain management. Their team understood our complex requirements and delivered a scalable, user-friendly system that improved our efficiency by 40%.",
+    rating: 5
+  },
+  {
+    name: "Vikram Singh",
+    position: "CTO, FinanceFirst",
+    review: "UP Flair's expertise in fintech solutions is outstanding. They developed a secure, compliant platform that handles thousands of transactions daily. Their commitment to quality and security standards is exemplary.",
+    rating: 5
+  },
+  {
+    name: "Anita Desai",
+    position: "Brand Manager, FashionForward",
+    review: "Our new e-commerce website and mobile app developed by UP Flair has transformed our customer experience. The modern design, seamless functionality, and robust backend have significantly boosted our online presence and sales.",
+    rating: 5
+  },
+  {
+    name: "Rohit Agarwal",
+    position: "Director, EduTech Solutions",
+    review: "UP Flair created an innovative learning management system that serves over 10,000 students. Their understanding of educational technology and user experience design resulted in a platform that both educators and students love.",
     rating: 5
   }
 ];
@@ -76,6 +83,10 @@ const Testimonials = () => {
     return () => clearInterval(interval);
   }, [direction, testimonials.length]);
 
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
       <svg
@@ -94,7 +105,6 @@ const Testimonials = () => {
       {/* Subtle background pattern */}
       <div 
         className="inset-0 bg-repeat bg-center opacity-5"
-
       ></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -113,16 +123,16 @@ const Testimonials = () => {
         <div className="relative max-w-7xl mx-auto">
           <div className="overflow-hidden">
             <div 
-              className="flex flex-col sm:flex-row"
+              className="flex flex-col sm:flex-row transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * cardWidth}%)` }}
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full sm:w-1/2 flex-shrink-0 px-2 sm:px-4 mb-6 sm:mb-0">
-                  <div className="bg-gray-100 rounded-2xl p-4 sm:p-8 h-full">
+                  <div className="bg-gray-100 rounded-2xl p-6 sm:p-8 h-full">
                     {/* Quote Icon */}
                     <div className="mb-6">
                       <svg 
-                        className="h-12 w-12 text-gray-200" 
+                        className="h-12 w-12 text-blue-200" 
                         fill="currentColor" 
                         viewBox="0 0 24 24"
                       >
@@ -131,7 +141,7 @@ const Testimonials = () => {
                     </div>
                     
                     {/* Review Text */}
-                    <p className="text-gray-600 text-lg leading-relaxed mb-6 italic">
+                    <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
                       "{testimonial.review}"
                     </p>
                     
@@ -145,8 +155,9 @@ const Testimonials = () => {
                       <h3 className="text-xl font-bold text-gray-800 mb-1">
                         {testimonial.name}
                       </h3>
-                      <p className="text-orange-500 font-medium mb-1">
-                        Upflair
+                     
+                      <p className="text-orange-500 font-medium text-sm">
+                        UPFlair Client
                       </p>
                     </div>
                   </div>
@@ -154,9 +165,6 @@ const Testimonials = () => {
               ))}
             </div>
           </div>
-          
-          {/* Navigation Arrows */}
-  
         </div>
         
         {/* Pagination Dots */}

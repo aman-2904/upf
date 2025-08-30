@@ -43,15 +43,15 @@ const Footer = () => {
           <div className="space-y-4 text-center md:text-left flex flex-col items-center md:items-start">
             <Image
               src="/logo.png"
-              alt="CDS Logo"
+              alt="UP Flair Logo"
               width={160}
               height={54}
               priority
             />
             <p className="text-sm leading-relaxed">
-              Central Data Systems is a leading provider of innovative IT
-              solutions, dedicated to helping businesses thrive in the digital
-              era.
+              UP Flair is a leading provider of innovative digital solutions, 
+              specializing in web development, mobile applications, and digital 
+              transformation to empower businesses in the modern digital landscape.
             </p>
           </div>
 
@@ -106,8 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center border-t border-slate-800 pt-6 text-sm md:flex-row md:justify-between">
           <p className="text-gray-400 text-center md:text-left">
-            © {new Date().getFullYear()} CDS – Central Data Systems. All rights
-            reserved.
+            © {new Date().getFullYear()} UP Flair. All rights reserved.
           </p>
 
           <div className="mt-4 flex gap-6 md:mt-0">

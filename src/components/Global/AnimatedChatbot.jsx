@@ -18,7 +18,7 @@ const AnimatedChatbot = () => {
 
     const quickReplies = [
         "Get a Quote",
-        "Our Services", 
+        "Our Services",
         "Contact Info",
         "Business Hours"
     ];
@@ -58,7 +58,7 @@ const AnimatedChatbot = () => {
             };
             setMessages(prev => [...prev, botMessage]);
             setIsTyping(false);
-            
+
             if (inputMessage.toLowerCase().includes("contact") || inputMessage.toLowerCase().includes("call")) {
                 setShowContactOptions(true);
             }
@@ -85,7 +85,7 @@ const AnimatedChatbot = () => {
                 {!isOpen && (
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-pulse"
+                        className="bg-gradient-to-r from-blue-600 to-purple-900 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-pulse"
                     >
                         <MessageCircle size={24} />
                         <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
@@ -123,24 +123,23 @@ const AnimatedChatbot = () => {
                                 className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"} animate-fadeIn`}
                             >
                                 <div
-                                    className={`max-w-[80%] p-3 rounded-2xl ${
-                                        message.sender === "user"
+                                    className={`max-w-[80%] p-3 rounded-2xl ${message.sender === "user"
                                             ? "bg-blue-600 text-white rounded-br-md"
                                             : "bg-white text-gray-800 rounded-bl-md shadow-sm border"
-                                    }`}
+                                        }`}
                                 >
                                     <p className="text-sm">{message.text}</p>
                                 </div>
                             </div>
                         ))}
-                        
+
                         {isTyping && (
                             <div className="flex justify-start animate-fadeIn">
                                 <div className="bg-white p-3 rounded-2xl rounded-bl-md shadow-sm border">
                                     <div className="flex space-x-1">
                                         <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: "0.1s"}}></div>
-                                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: "0.2s"}}></div>
+                                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.1s" }}></div>
+                                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
                                     </div>
                                 </div>
                             </div>
