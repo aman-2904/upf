@@ -5,43 +5,43 @@ const testimonials = [
   {
     name: "Rajesh Mehta",
     position: "CEO, TechVision Solutions",
-    review: "UP Flair delivered an exceptional e-commerce platform that increased our online sales by 150% within 6 months. Their team's technical expertise and innovative approach to digital transformation is truly remarkable. The project was completed on time and within budget.",
+    review: "Upflair delivered an exceptional e-commerce platform that increased our online sales by 150% within 6 months. Their team's technical expertise and innovative approach to digital transformation is truly remarkable. The project was completed on time and within budget.",
     rating: 5
   },
   {
     name: "Priya Sharma",
     position: "Marketing Director, GreenTech Industries",
-    review: "Working with UP Flair was a game-changer for our digital marketing strategy. They developed a comprehensive web application and mobile app that streamlined our operations. Their attention to detail and customer-centric approach sets them apart from other agencies.",
+    review: "Working with Upflair was a game-changer for our digital marketing strategy. They developed a comprehensive web application and mobile app that streamlined our operations. Their attention to detail and customer-centric approach sets them apart from other agencies.",
     rating: 5
   },
   {
     name: "Amit Kumar",
     position: "Founder, StartupHub",
-    review: "UP Flair transformed our startup idea into a fully functional digital platform. Their expertise in modern web technologies and mobile app development helped us launch successfully. The team's dedication and innovative solutions exceeded our expectations.",
+    review: "Upflair transformed our startup idea into a fully functional digital platform. Their expertise in modern web technologies and mobile app development helped us launch successfully. The team's dedication and innovative solutions exceeded our expectations.",
     rating: 5
   },
   {
     name: "Neha Patel",
     position: "Operations Manager, LogiFlow Corp",
-    review: "The custom software solution developed by UP Flair has revolutionized our supply chain management. Their team understood our complex requirements and delivered a scalable, user-friendly system that improved our efficiency by 40%.",
+    review: "The custom software solution developed by Upflair has revolutionized our supply chain management. Their team understood our complex requirements and delivered a scalable, user-friendly system that improved our efficiency by 40%.",
     rating: 5
   },
   {
     name: "Vikram Singh",
     position: "CTO, FinanceFirst",
-    review: "UP Flair's expertise in fintech solutions is outstanding. They developed a secure, compliant platform that handles thousands of transactions daily. Their commitment to quality and security standards is exemplary.",
+    review: "Upflair's expertise in fintech solutions is outstanding. They developed a secure, compliant platform that handles thousands of transactions daily. Their commitment to quality and security standards is exemplary.",
     rating: 5
   },
   {
     name: "Anita Desai",
     position: "Brand Manager, FashionForward",
-    review: "Our new e-commerce website and mobile app developed by UP Flair has transformed our customer experience. The modern design, seamless functionality, and robust backend have significantly boosted our online presence and sales.",
+    review: "Our new e-commerce website and mobile app developed by Upflair has transformed our customer experience. The modern design, seamless functionality, and robust backend have significantly boosted our online presence and sales.",
     rating: 5
   },
   {
     name: "Rohit Agarwal",
     position: "Director, EduTech Solutions",
-    review: "UP Flair created an innovative learning management system that serves over 10,000 students. Their understanding of educational technology and user experience design resulted in a platform that both educators and students love.",
+    review: "Upflair created an innovative learning management system that serves over 10,000 students. Their understanding of educational technology and user experience design resulted in a platform that both educators and students love.",
     rating: 5
   }
 ];
@@ -157,7 +157,7 @@ const Testimonials = () => {
                       </h3>
                      
                       <p className="text-orange-500 font-medium text-sm">
-                        UPFlair Client
+                        Upflair Client
                       </p>
                     </div>
                   </div>

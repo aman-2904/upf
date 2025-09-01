@@ -24,7 +24,7 @@ const statsData = [
         />
       </svg>
     ),
-    value: "10,000+",
+    value: "500+",
     label: "Customer's Satisfied",
   },
   {
@@ -48,7 +48,7 @@ const statsData = [
         />
       </svg>
     ),
-    value: "12+",
+    value: "2+",
     label: "Years of Service",
   },
   {
@@ -72,7 +72,7 @@ const statsData = [
         />
       </svg>
     ),
-    value: "300+",
+    value: "60+",
     label: "Projects Completed",
   },
 ];
