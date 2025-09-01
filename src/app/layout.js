@@ -1,3 +1,4 @@
+import TopBar from "@/components/Global/TopBar";
 import "./globals.css";
 import AnimatedChatbot from "@/components/Global/AnimatedChatbot";
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body>
+        <TopBar/>
         {children}
         <AnimatedChatbot />
       </body>

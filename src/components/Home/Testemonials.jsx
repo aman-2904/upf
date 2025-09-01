@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const testimonials = [
   {
@@ -14,18 +15,7 @@ const testimonials = [
     review: "Working with Upflair was a game-changer for our digital marketing strategy. They developed a comprehensive web application and mobile app that streamlined our operations. Their attention to detail and customer-centric approach sets them apart from other agencies.",
     rating: 5
   },
-  {
-    name: "Amit Kumar",
-    position: "Founder, StartupHub",
-    review: "Upflair transformed our startup idea into a fully functional digital platform. Their expertise in modern web technologies and mobile app development helped us launch successfully. The team's dedication and innovative solutions exceeded our expectations.",
-    rating: 5
-  },
-  {
-    name: "Neha Patel",
-    position: "Operations Manager, LogiFlow Corp",
-    review: "The custom software solution developed by Upflair has revolutionized our supply chain management. Their team understood our complex requirements and delivered a scalable, user-friendly system that improved our efficiency by 40%.",
-    rating: 5
-  },
+
   {
     name: "Vikram Singh",
     position: "CTO, FinanceFirst",
@@ -48,50 +38,24 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState('right');
-  const [cardWidth, setCardWidth] = useState(50);
 
-  React.useEffect(() => {
-    const handleResize = () => {
-      setCardWidth(window.innerWidth < 640 ? 100 : 50);
-    };
-    if (typeof window !== 'undefined') {
-      handleResize();
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }
-  }, []);
+  const nextTestimonial = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        if (direction === 'right') {
-          if (prevIndex === testimonials.length - 2) {
-            setDirection('left');
-            return prevIndex - 1;
-          }
-          return prevIndex + 1;
-        } else {
-          if (prevIndex === 0) {
-            setDirection('right');
-            return prevIndex + 1;
-          }
-          return prevIndex - 1;
-        }
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [direction, testimonials.length]);
-
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
+  const prevTestimonial = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
   };
 
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
       <svg
         key={index}
-        className={`h-5 w-5 ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+        className={`h-5 w-5 ${index < rating ? 'text-orange-400' : 'text-gray-300'}`}
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -100,87 +64,84 @@ const Testimonials = () => {
     ));
   };
 
-  return (
-    <section className="font-sans py-20 bg-white relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div 
-        className="inset-0 bg-repeat bg-center opacity-5"
-      ></div>
+  const currentTestimonial = testimonials[currentIndex];
 
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
+  return (
+    <section className="font-sans py-20 bg-gray-50">
+      <div className="container mx-auto ">
+        {/* Main Heading */}
         <div className="text-center mb-16">
-          <div className="mb-4">
-            <span className="text-orange-500 text-sm font-semibold tracking-wider uppercase">TESTIMONIALS</span>
-            <div className="h-1 w-16 bg-orange-500 rounded mx-auto mt-2"></div>
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight">
-            Client's Reviews
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight max-w-4xl mx-auto">
+          Clients Review
           </h2>
         </div>
 
-        {/* Testimonials Slider */}
-        <div className="relative max-w-7xl mx-auto">
-          <div className="overflow-hidden">
-            <div 
-              className="flex flex-col sm:flex-row transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * cardWidth}%)` }}
-            >
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="w-full sm:w-1/2 flex-shrink-0 px-2 sm:px-4 mb-6 sm:mb-0">
-                  <div className="bg-gray-100 rounded-2xl p-6 sm:p-8 h-full">
-                    {/* Quote Icon */}
-                    <div className="mb-6">
-                      <svg 
-                        className="h-12 w-12 text-blue-200" 
-                        fill="currentColor" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                      </svg>
-                    </div>
-                    
-                    {/* Review Text */}
-                    <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
-                      "{testimonial.review}"
-                    </p>
-                    
-                    {/* Rating Stars */}
-                    <div className="flex justify-center mb-6">
-                      {renderStars(testimonial.rating)}
-                    </div>
-                    
-                    {/* Client Info */}
-                    <div className="text-center border-t pt-6">
-                      <h3 className="text-xl font-bold text-gray-800 mb-1">
-                        {testimonial.name}
-                      </h3>
-                     
-                      <p className="text-orange-500 font-medium text-sm">
-                        Upflair Client
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+        {/* Main Content Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-7xl mx-auto">
+          {/* Left Side - Image Placeholder */}
+          <div className="relative">
+            <div className=" aspect-[4/2] flex items-center justify-center text-gray-600 -mt-12">
+              <div className="text-center">
+                <img src="/img1.jpeg" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-        
-        {/* Pagination Dots */}
-        <div className="flex justify-center mt-8 space-x-3">
-          {Array.from({ length: testimonials.length - 1 }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`h-3 w-3 rounded-full transition-all duration-300 ${
-                currentIndex === index 
-                  ? 'bg-orange-500 w-8' 
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-              aria-label={`Go to testimonial ${index + 1}`}
-            />
-          ))}
+
+          {/* Right Side - Testimonial Content */}
+          <div className="relative">
+            <div className="bg-white p-8 md:p-12 shadow-lg relative h-[500px] flex flex-col justify-between">
+              {/* Quote */}
+              <div className="flex-1">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0a1f55] mb-6 line-clamp-2">
+                  "{currentTestimonial.name === 'Rajesh Mehta' ? 'Many Benefits for the environment' : currentTestimonial.review.split('.')[0]}."
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed line-clamp-6 overflow-hidden">
+                  {currentTestimonial.review}
+                </p>
+              </div>
+
+              {/* Client Info - Fixed at bottom */}
+              <div className="mt-auto">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* Avatar */}
+                  <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center text-gray-600 text-sm font-medium">
+                    {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900">
+                      {currentTestimonial.name}
+                    </h4>
+                    <p className="text-gray-600">
+                      {currentTestimonial.position}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Rating Stars */}
+                <div className="flex gap-1">
+                  {renderStars(currentTestimonial.rating)}
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            <div className="flex flex-row absolute bottom-4 -right-1 transform -translate-y-1/2 flex flex-col gap-4">
+              <button
+                onClick={prevTestimonial}
+                className="w-12 h-12 bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 group"
+                aria-label="Previous testimonial"
+              >
+                <FiChevronLeft className="h-6 w-6 text-gray-600 group-hover:text-gray-900" />
+              </button>
+              <button
+                onClick={nextTestimonial}
+                className="w-12 h-12 bg-white  shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 group"
+                aria-label="Next testimonial"
+              >
+                <FiChevronRight className="h-6 w-6 text-gray-600 group-hover:text-gray-900" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

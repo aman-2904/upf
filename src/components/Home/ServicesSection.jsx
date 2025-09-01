@@ -6,7 +6,7 @@ const servicesData = [
   {
     icon: (
       <svg
-        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 group-hover:text-white"
+        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 "
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -26,7 +26,7 @@ const servicesData = [
   {
     icon: (
       <svg
-        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 group-hover:text-white"
+        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 "
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -46,7 +46,7 @@ const servicesData = [
   {
     icon: (
       <svg
-        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 group-hover:text-white"
+        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 "
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -66,7 +66,7 @@ const servicesData = [
   {
     icon: (
       <svg
-        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 group-hover:text-white"
+        className="h-12 w-12 text-gray-700 transition-transform duration-300 group-hover:scale-110 "
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -104,15 +104,10 @@ export const ServicesSection = () => {
       <div className="container mx-auto px-4 text-center">
         {/* Top Section: Subtitle and Title */}
         <div className="mb-16">
-          <p className="mb-4 inline-block rounded-full bg-blue-100 px-4 py-1 text-2xl font-semibold text-blue-700">
-            ~ Our Services ~
+          <p className="mb-4 inline-block rounded-full bg-white px-4 py-1 text-5xl font-semibold text-[#0a1f55]">
+             Our Services 
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-800 md:text-5xl">
-            Gain an Advantage with Upflair Services
-          </h1>
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-800 md:text-5xl">
-            to Achieve Your Business Outcomes
-          </h2>
+         <p className="max-w-4xl mx-auto text-lg">Upflair Technology provides end-to-end solutions for critical infrastructure, specializing in power, thermal control, IT systems, and monitoring, ensuring optimal performance in mission-critical environments.</p>
         </div>
 
         {/* Grid of Service Cards */}
@@ -120,27 +115,27 @@ export const ServicesSection = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="group relative transform cursor-pointer rounded-2xl border border-slate-200 bg-white p-8 shadow-md  hover:shadow-2xl hover:shadow-blue-500/30 hover:bg-blue-600"
+              className="group relative transform cursor-pointer rounded-2xl border border-2 border-[#0a1f55] bg-white  p-8 shadow-md  hover:shadow-2xl hover:shadow-blue-500/50 "
             >
               {/* Icon */}
-              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-slate-100 transition-colors duration-300 group-hover:bg-blue-500 mx-auto">
+              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-slate-100 transition-colors duration-300  mx-auto">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="mb-4 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-white">
+              <h3 className="mb-4 text-xl font-bold text-gray-900 transition-colors duration-300 ">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 transition-colors duration-300 group-hover:text-blue-100">
+              <p className="text-gray-600 transition-colors duration-300 ">
                 {service.description}
               </p>
 
               {/* Learn More Link */}
               <a
                 href="#"
-                className="mt-6 inline-flex items-center text-blue-600 font-semibold transition-colors duration-300 group-hover:text-white"
+                className="mt-6 inline-flex items-center text-blue-600 font-semibold transition-colors duration-300 "
               >
                 Learn More
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">

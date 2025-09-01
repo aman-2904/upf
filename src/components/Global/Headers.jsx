@@ -37,21 +37,16 @@ const Headers = () => {
                     <a href="#home" className="hover:text-blue-700 transition">
                         Home
                     </a>
-
-                    <a href="#services" className="hover:text-blue-700 transition cursor-pointer">
-                        Services
-                    </a>
-
-                    <a href="#about" className="hover:text-blue-700 transition cursor-pointer">
+                       <a href="#about" className="hover:text-blue-700 transition cursor-pointer">
                         About Us
                     </a>
 
                     <a href="#stats" className="hover:text-blue-700 transition cursor-pointer">
-                        Stats
+                        Solutions
                     </a>
 
-                    <a href="#contact" className="hover:text-blue-700 transition">
-                        Contact Us
+                    <a href="#services" className="hover:text-blue-700 transition cursor-pointer">
+                        Services
                     </a>
                 </nav>
 
