@@ -5,24 +5,10 @@ import {
   MapPin,
   Phone,
   Mail,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Send,
 } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
-  const SocialLink = ({ href, icon: Icon, ariaLabel }) => (
-    <Link
-      href={href}
-      aria-label={ariaLabel}
-      className="group rounded-full p-2 transition-colors duration-300 hover:bg-blue-600"
-    >
-      <Icon className="h-5 w-5 text-gray-400 transition-colors duration-300 group-hover:text-white" />
-    </Link>
-  );
-
   const FooterLink = ({ href, children }) => (
     <li>
       <Link
@@ -49,7 +35,7 @@ const Footer = () => {
               priority
             />
             <p className="text-sm leading-relaxed">
-              UP Flair is a leading provider of innovative digital solutions, 
+              Upflair is a leading provider of innovative digital solutions, 
               specializing in web development, mobile applications, and digital 
               transformation to empower businesses in the modern digital landscape.
             </p>
@@ -90,7 +76,7 @@ const Footer = () => {
                 <span>+91 9035300045</span>
               </a>
               <a
-                href="mailto:info@cdspl.com"
+                href="mailto:sales@upflair.in"
                 className="flex items-center gap-3 justify-center md:justify-start transition-colors duration-300 hover:text-blue-400"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -106,7 +92,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center border-t border-slate-800 pt-6 text-sm md:flex-row md:justify-between">
           <p className="text-gray-400 text-center md:text-left">
-            © {new Date().getFullYear()} UP Flair. All rights reserved.
+            © {new Date().getFullYear()} Upflair. All rights reserved.
           </p>
 
           <div className="mt-4 flex gap-6 md:mt-0">

@@ -2,6 +2,7 @@ import Footer from "@/components/Global/Footer";
 import Headers from "@/components/Global/Headers";
 
 import CTASection from "@/components/Home/CTASection";
+import DeltaPartner from "@/components/Home/DeltaPartner";
 import Extra from "@/components/Home/Extra";
 import HeroSection from "@/components/Home/HeroSection";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <WhyChoose />
       </section>
       <Extra />
+      <DeltaPartner/>
      
       <section id="stats">
         <StatsSection />

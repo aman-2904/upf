@@ -14,10 +14,10 @@ const CTASection = () => {
           {/* Left Side: Text Content */}
           <div className="z-10 text-center md:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-[#0a1f55] sm:text-4xl">
-              Choose UPFlair as a Digital Transformation Partner
+              Choose Upflair as a Digital Transformation Partner
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-[#0a1f55]/90">
-              UPFlair provides comprehensive support and professional services to help organizations throughout their Digital Transformation Journey.
+              Upflair provides comprehensive support and professional services to help organizations throughout their Digital Transformation Journey.
             </p>
           </div>
 
