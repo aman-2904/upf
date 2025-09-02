@@ -1,89 +1,121 @@
 "use client";
 import React from "react";
-import { FiSettings,  FiServer, FiRefreshCw, FiZap, FiTool} from "react-icons/fi";
+import { FiSettings, FiThermometer, FiBattery, FiLayers, FiPlug, FiTool, FiCalendar, FiGift } from "react-icons/fi";
 
 export default function ServicesPage() {
   // Services data
   const services = [
     {
       id: 1,
-      title: "Professional Services",
+      title: "Power Quality Analysis",
       icon: <FiSettings className="h-8 w-8" />,
-      description: "Our Consulting Services are a suite of offerings that help you construct and smoothly adopt an enterprise-ready architecture.",
+      description: "Comprehensive electrical power quality assessment and analysis to identify issues affecting equipment performance and reliability.",
       features: [
-        "Enterprise architecture consulting",
-        "Technology strategy and planning",
-        "Digital transformation roadmap",
-        "Infrastructure assessment and optimization"
-      ]
+        "Voltage disturbance analysis",
+        "Harmonic measurement and mitigation",
+        "Power factor correction",
+        "Load flow analysis and optimization"
+      ],
+      link: "/services/power-quality-analysis"
     },
     {
       id: 2,
-      title: "Centre Of Excellence",
-    //   icon: <FiBuilding className="h-8 w-8" />,
-      description: "UpFlair has built a state-of-the-art Centre of Excellence to incorporate some of the latest Cisco technologies and use cases.",
+      title: "Thermography",
+      icon: <FiThermometer className="h-8 w-8" />,
+      description: "Advanced thermal imaging services for electrical system assessment to identify hotspots and potential failure points.",
       features: [
-        "Technology innovation center",
-        "Solution demonstration facilities",
-        "Proof of concept development",
-        "Technology integration lab"
-      ]
+        "Infrared thermal imaging",
+        "Electrical hotspot detection",
+        "Preventive maintenance planning",
+        "Safety and compliance assessment"
+      ],
+      link: "/services/thermography"
     },
     {
       id: 3,
-      title: "Data Centre Build",
-      icon: <FiServer className="h-8 w-8" />,
-      description: "UpFlair offers solutions and services to create new data centres or upgrade retrofit and right-size on-premises Data Centres.",
+      title: "Battery Impedance Testing",
+      icon: <FiBattery className="h-8 w-8" />,
+      description: "Professional battery testing services to ensure reliable backup power systems and optimal battery performance.",
       features: [
-        "Data center design and planning",
-        "Infrastructure implementation",
-        "Power and cooling optimization",
-        "Security and compliance solutions"
-      ]
+        "Battery condition assessment",
+        "Impedance and conductance testing",
+        "Load testing and capacity verification",
+        "Maintenance scheduling optimization"
+      ],
+      link: "/services/battery-impedance-testing"
     },
     {
       id: 4,
-      title: "Data Centre Relocation",
-      icon: <FiRefreshCw className="h-8 w-8" />,
-      description: "Engaging experienced professionals can ensure a successful data centre movement with minimum disruptions to business.",
+      title: "Earth Pit Testing",
+      icon: <FiLayers className="h-8 w-8" />,
+      description: "Comprehensive grounding system testing and analysis to ensure electrical safety and regulatory compliance.",
       features: [
-        "Relocation planning and strategy",
-        "Data migration and transfer",
-        "Business continuity planning",
-        "Post-relocation support and optimization"
-      ]
+        "Earth resistance testing",
+        "Soil resistivity analysis",
+        "Grounding system design verification",
+        "Lightning protection assessment"
+      ],
+      link: "/services/earth-pit-testing"
     },
     {
       id: 5,
-      title: "Power Systems Integration",
-      icon: <FiZap className="h-8 w-8" />,
-      description: "Comprehensive power system solutions for mission-critical environments, ensuring reliable and efficient energy distribution.",
+      title: "Socket Testing",
+      icon: <FiPlug className="h-8 w-8" />,
+      description: "Electrical outlet safety and performance testing to ensure safe operation and regulatory compliance.",
       features: [
-        "Power distribution systems",
-        "Uninterrupted power supply (UPS)",
-        "Energy storage solutions",
-        "Power monitoring and management"
-      ]
+        "Electrical socket safety testing",
+        "RCD and RCBO functionality testing",
+        "Polarity and wiring verification",
+        "Power quality assessment"
+      ],
+      link: "/services/socket-testing"
     },
     {
       id: 6,
-      title: "Industrial Automation",
+      title: "Specialised Services",
       icon: <FiTool className="h-8 w-8" />,
-      description: "Advanced automation solutions for industrial facilities, optimizing efficiency, safety, and productivity through cutting-edge technology.",
+      description: "Expert solutions for unique electrical challenges and complex requirements that demand specialized knowledge.",
       features: [
-        "Process automation systems",
-        "Control system integration",
-        "Industrial IoT implementation",
-        "Predictive maintenance solutions"
-      ]
+        "Custom electrical solutions",
+        "Advanced electrical testing",
+        "Industrial automation integration",
+        "Energy management systems"
+      ],
+      link: "/services/specialised-services"
+    },
+    {
+      id: 7,
+      title: "Maintenance & AMC Services",
+      icon: <FiCalendar className="h-8 w-8" />,
+      description: "Comprehensive electrical maintenance and Annual Maintenance Contract services to ensure system reliability.",
+      features: [
+        "Comprehensive maintenance programs",
+        "Emergency response services",
+        "Predictive maintenance services",
+        "Maintenance management systems"
+      ],
+      link: "/services/maintenance-amc"
+    },
+    {
+      id: 8,
+      title: "AMC Offers to Customers",
+      icon: <FiGift className="h-8 w-8" />,
+      description: "Exclusive benefits and rewards for our valued AMC customers with special offers and comprehensive coverage.",
+      features: [
+        "Exclusive AMC package benefits",
+        "Premium customer rewards",
+        "Comprehensive coverage options",
+        "Value-added services"
+      ],
+      link: "/services/amc-offers"
     }
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
-      <section className="relative h-[400px] bg-[url('/services-header.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/60 flex items-center justify-center">
+      <section className="relative h-[400px] bg-[url('/banner.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-blue-700/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
@@ -97,9 +129,9 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           {/* Introduction Section */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Comprehensive Services for Mission-Critical Infrastructure</h2>
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Professional Electrical Testing and Maintenance Services</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Upflair Technology provides end-to-end solutions for critical infrastructure, specializing in power, thermal control, IT systems, and monitoring, ensuring optimal performance in mission-critical environments.
+              Upflair Technology provides comprehensive electrical testing, analysis, and maintenance services to ensure optimal performance, safety, and reliability of your electrical systems and infrastructure.
             </p>
           </div>
 
@@ -140,7 +172,7 @@ export default function ServicesPage() {
                 {/* Learn More Button */}
                 <div className="px-8 pb-8">
                   <a
-                    href="#"
+                    href={service.link}
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
                   >
                     Learn More

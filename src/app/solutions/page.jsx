@@ -9,7 +9,7 @@ export default function SolutionsPage() {
       id: 1,
       title: "Home & Office Solutions",
       icon: <FiHome className="h-8 w-8" />,
-      description: "Comprehensive energy solutions for residential and commercial spaces",
+      description: "Secure your home and office with APC UPS. Essential for uninterrupted power, our UPS for PC and home solutions safeguard productivity. Trust APC for UPS for home and UPS for office to power your world without pause.",
       features: [
         "Smart home automation systems",
         "Energy-efficient lighting solutions",
@@ -21,7 +21,7 @@ export default function SolutionsPage() {
       id: 2,
       title: "Business Solution",
       icon: <FiBriefcase className="h-8 w-8" />,
-      description: "Tailored business energy management and efficiency solutions",
+      description: "Power your business with online UPS systems, remote UPS monitoring, voltage stabilizers, and batteries, ensuring uninterrupted operations and optimized power management.",
       features: [
         "Custom business energy audits",
         "Cost optimization strategies",
@@ -33,7 +33,7 @@ export default function SolutionsPage() {
       id: 3,
       title: "Industrial Solution",
       icon: <FiTool className="h-8 w-8" />,
-      description: "Heavy-duty industrial power and infrastructure solutions",
+      description: "Enhance big industry operations with our industrial power solutions, including UPS systems, ensuring reliable performance and uninterrupted productivity.",
       features: [
         "Industrial power distribution systems",
         "Heavy machinery electrical solutions",
@@ -45,7 +45,7 @@ export default function SolutionsPage() {
       id: 4,
       title: "Data Center Solutions",
       icon: <FiServer className="h-8 w-8" />,
-      description: "Mission-critical data center power and cooling solutions",
+      description: "Maximize data center efficiency with our specialized UPS solutions, delivering reliable power backup and optimized energy utilization. Our comprehensive power solutions ensure uninterrupted performance, enabling your data center to thrive in the digital age.",
       features: [
         "Data center power infrastructure",
         "Precision cooling systems",
@@ -57,7 +57,7 @@ export default function SolutionsPage() {
       id: 5,
       title: "Green Solution",
       icon: <FiRefreshCw className="h-8 w-8" />,
-      description: "Sustainable and environmentally friendly energy solutions",
+      description: "Go green with our sustainable solutions, leveraging rooftop solar power and grids for clean and cost-effective energy.",
       features: [
         "Solar power integration",
         "Energy storage solutions",
@@ -69,12 +69,36 @@ export default function SolutionsPage() {
       id: 6,
       title: "Electrical Turnkey Contract",
       icon: <FiZap className="h-8 w-8" />,
-      description: "Complete electrical project management and implementation",
+      description: "Practical renewable energy technology that reduces costs and helps the environment",
       features: [
         "End-to-end project management",
         "Electrical system design",
         "Installation and commissioning",
         "Maintenance and support"
+      ]
+    },
+     {
+      id: 7,
+      title: "Video Surveillance Cameras",
+      icon: <FiZap className="h-8 w-8" />,
+      description: "Enhance security with our reliable video surveillance solutions, featuring CCTV cameras for continuous monitoring and peace of mind.",
+      features: [
+        "IP camera systems with AI analytics",
+        "Intelligent monitoring and alerts",
+        "Network video recording",
+        "Access control integration"
+      ]
+    },
+     {
+      id: 8,
+      title: "Micro Data Centre FX",
+      icon: <FiZap className="h-8 w-8" />,
+      description: "Efficiently address your data needs with our cutting-edge micro data center service, offering compact and scalable solutions for secure data storage, management, and processing in a compact footprint.",
+      features: [
+        "Compact infrastructure design",
+        "Edge computing capabilities",
+        "Integrated cooling systems",
+        "Security and access control"
       ]
     }
   ];
@@ -82,8 +106,8 @@ export default function SolutionsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
-      <section className="relative h-[400px] bg-[url('/solutions-header.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/60 flex items-center justify-center">
+      <section className="relative h-[400px] bg-[url('/banner.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-blue-700/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Solutions</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
@@ -108,7 +132,7 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <div 
                 key={solution.id}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100 transform hover:-translate-y-1"
+                className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-blue-100 transform hover:-translate-y-1"
               >
                 <div className="p-8">
                   {/* Icon */}
@@ -140,7 +164,13 @@ export default function SolutionsPage() {
                 {/* Learn More Button */}
                 <div className="px-8 pb-8">
                   <a
-                    href="#"
+                    href={`/solutions/${solution.id === 1 ? 'home-office' : 
+                           solution.id === 2 ? 'business' : 
+                           solution.id === 3 ? 'industrial' : 
+                           solution.id === 4 ? 'data-center' : 
+                           solution.id === 5 ? 'green' : 
+                           solution.id === 6 ? 'electrical-turnkey' :
+                           solution.id === 7 ? 'video-surveillance' : 'micro-datacenter-fx'}`}
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
                   >
                     Learn More
@@ -190,11 +220,11 @@ export default function SolutionsPage() {
           </div>
 
           {/* Industries Section */}
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Industries We Serve</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Industry 1 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+   
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-700">
                   <FiHome className="h-6 w-6" />
                 </div>
@@ -204,8 +234,8 @@ export default function SolutionsPage() {
                 </p>
               </div>
               
-              {/* Industry 2 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-700">
                   <FiBriefcase className="h-6 w-6" />
                 </div>
@@ -215,8 +245,8 @@ export default function SolutionsPage() {
                 </p>
               </div>
               
-              {/* Industry 3 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+       
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-700">
                   <FiTool className="h-6 w-6" />
                 </div>
@@ -226,8 +256,8 @@ export default function SolutionsPage() {
                 </p>
               </div>
               
-              {/* Industry 4 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-orange-700">
                   <FiServer className="h-6 w-6" />
                 </div>
@@ -237,8 +267,8 @@ export default function SolutionsPage() {
                 </p>
               </div>
               
-              {/* Industry 5 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+    
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4 text-red-700">
                   <FiRefreshCw className="h-6 w-6" />
                 </div>
@@ -248,8 +278,8 @@ export default function SolutionsPage() {
                 </p>
               </div>
               
-              {/* Industry 6 */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-700">
                   <FiZap className="h-6 w-6" />
                 </div>
@@ -259,10 +289,10 @@ export default function SolutionsPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-[#0a1f55] to-[#132b74] rounded-2xl p-8 md:p-12 text-white mb-16">
+          {/* <div className="bg-gradient-to-r from-[#0a1f55] to-[#132b74] rounded-2xl p-8 md:p-12 text-white mb-16">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Perfect Solution?</h2>
               <p className="text-lg mb-8 text-blue-100">
@@ -279,7 +309,7 @@ export default function SolutionsPage() {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

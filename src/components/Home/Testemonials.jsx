@@ -4,35 +4,41 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const testimonials = [
   {
-    name: "Rajesh Mehta",
-    position: "CEO, TechVision Solutions",
-    review: "Upflair delivered an exceptional e-commerce platform that increased our online sales by 150% within 6 months. Their team's technical expertise and innovative approach to digital transformation is truly remarkable. The project was completed on time and within budget.",
+    name: "Amit Sharma",
+    position: "",
+    review: "The customer support was incredibly enthusiastic and focused, making the experience seamless. In my case, the company provides excellent value for money. I highly recommend both the service and the product, as they offer great quality at a competitive price.",
     rating: 5
   },
   {
-    name: "Priya Sharma",
+    name: "Ravi Kumar",
     position: "Marketing Director, GreenTech Industries",
-    review: "Working with Upflair was a game-changer for our digital marketing strategy. They developed a comprehensive web application and mobile app that streamlined our operations. Their attention to detail and customer-centric approach sets them apart from other agencies.",
+    review: "I was searching for a UPS for my Wi-Fi and router, but couldn’t find suitable options on Amazon or Flipkart. However, Upflair Technologies delivered the perfect UPS the very next day. I’m extremely satisfied with the product. Thank you!",
     rating: 5
   },
 
   {
-    name: "Vikram Singh",
+    name: "Rohit Singh",
     position: "CTO, FinanceFirst",
-    review: "Upflair's expertise in fintech solutions is outstanding. They developed a secure, compliant platform that handles thousands of transactions daily. Their commitment to quality and security standards is exemplary.",
+    review: "I conduct online classes, and power cuts are quite common in my area, which affects my work significantly. I needed a UPS but didn’t search around online. Instead, I went directly to Upflair Technologies, as I’ve been using their product for the past few years. It has proven to be a total value-for-money investment.",
     rating: 5
   },
   {
-    name: "Anita Desai",
+    name: "Priya Desai",
     position: "Brand Manager, FashionForward",
-    review: "Our new e-commerce website and mobile app developed by Upflair has transformed our customer experience. The modern design, seamless functionality, and robust backend have significantly boosted our online presence and sales.",
+    review: "I purchased the APC BX1100C-IN from Upflair Technologies, and it’s been working perfectly. The customer support was fantastic, providing prompt assistance during installation. Excellent service and high-quality products. My UPS has been running smoothly for over a year now, with no issues. If you're considering their products, go for it with confidence. Highly recommended!",
     rating: 5
   },
   {
-    name: "Rohit Agarwal",
+    name: "Vishnu Jha",
     position: "Director, EduTech Solutions",
-    review: "Upflair created an innovative learning management system that serves over 10,000 students. Their understanding of educational technology and user experience design resulted in a platform that both educators and students love.",
-    rating: 5
+    review: "I discovered Upflair Technologies while searching for vendors offering APS UPS systems. They provided the best pricing and faster delivery compared to other options. I ordered a UPS for my work-from-home setup, and it arrived within a week. The entire process, from ordering to status updates and delivery, was handled with great professionalism.",
+    rating: 4
+  },
+   {
+    name: "Amit kumar",
+    position: "Director, EduTech Solutions",
+    review: "I was looking for a reliable UPS for my home office and came across Upflair Technologies. Their customer service was prompt and knowledgeable, guiding me through the best options for my needs. I placed the order, and the UPS was delivered within just a few days. The product quality is excellent, and the whole experience was smooth and hassle-free. Highly recommend!",
+    rating: 3
   }
 ];
 
@@ -111,16 +117,18 @@ const Testimonials = () => {
                     <h4 className="text-xl font-bold text-gray-900">
                       {currentTestimonial.name}
                     </h4>
-                    <p className="text-gray-600">
+                    {/* <p className="text-gray-600">
                       {currentTestimonial.position}
-                    </p>
+                    </p> */}
+                       <div className="flex gap-1">
+                  {renderStars(currentTestimonial.rating)}
+                </div>
                   </div>
+                 
                 </div>
 
                 {/* Rating Stars */}
-                <div className="flex gap-1">
-                  {renderStars(currentTestimonial.rating)}
-                </div>
+              
               </div>
             </div>
 
