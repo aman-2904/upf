@@ -37,7 +37,7 @@ const Headers = () => {
                     <a href="/" className="hover:text-blue-700 transition">
                         Home
                     </a>
-                       <a href="about" className="hover:text-blue-700 transition cursor-pointer">
+                       <a href="/about" className="hover:text-blue-700 transition cursor-pointer">
                         About Us
                     </a>
 
