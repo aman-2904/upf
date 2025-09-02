@@ -34,18 +34,18 @@ const Headers = () => {
 
                 {/* Center Navigation */}
                 <nav className="hidden md:flex items-center gap-8 text-[18px] font-medium text-[#0a0a23]">
-                    <a href="#home" className="hover:text-blue-700 transition">
+                    <a href="/" className="hover:text-blue-700 transition">
                         Home
                     </a>
-                       <a href="#about" className="hover:text-blue-700 transition cursor-pointer">
+                       <a href="about" className="hover:text-blue-700 transition cursor-pointer">
                         About Us
                     </a>
 
-                    <a href="#stats" className="hover:text-blue-700 transition cursor-pointer">
+                    <a href="/solutions" className="hover:text-blue-700 transition cursor-pointer">
                         Solutions
                     </a>
 
-                    <a href="#services" className="hover:text-blue-700 transition cursor-pointer">
+                    <a href="/services" className="hover:text-blue-700 transition cursor-pointer">
                         Services
                     </a>
                 </nav>

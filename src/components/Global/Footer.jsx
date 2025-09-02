@@ -21,7 +21,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-slate-900 text-gray-300">
+    <footer className=" bg-slate-900 text-gray-300">
       <div className="container mx-auto  pt-12 pb-8">
         {/* Main Grid */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-12">
