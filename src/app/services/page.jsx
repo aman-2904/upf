@@ -7,7 +7,7 @@ export default function ServicesPage() {
   const services = [
     {
       id: 1,
-      title: "Power Quality Analysis",
+      title: "Ups Maintenance Contract", 
       icon: <FiSettings className="h-8 w-8" />,
       description: "Comprehensive electrical power quality assessment and analysis to identify issues affecting equipment performance and reliability.",
       features: [
@@ -16,13 +16,13 @@ export default function ServicesPage() {
         "Power factor correction",
         "Load flow analysis and optimization"
       ],
-      link: "/services/power-quality-analysis"
+      link: "/services/ups-maintenance"
     },
     {
       id: 2,
-      title: "Thermography",
+      title: "Battery Monitoring",
       icon: <FiThermometer className="h-8 w-8" />,
-      description: "Advanced thermal imaging services for electrical system assessment to identify hotspots and potential failure points.",
+      description: "Eficiently monitor and manage your UPS battery health with our advanced battery monitoring system, offering comprehensive oversight and proactive measures to ensure optimal performance and reliability.",
       features: [
         "Infrared thermal imaging",
         "Electrical hotspot detection",
@@ -33,7 +33,7 @@ export default function ServicesPage() {
     },
     {
       id: 3,
-      title: "Battery Impedance Testing",
+      title: "Remote UPS Monitoring",
       icon: <FiBattery className="h-8 w-8" />,
       description: "Professional battery testing services to ensure reliable backup power systems and optimal battery performance.",
       features: [
@@ -42,11 +42,11 @@ export default function ServicesPage() {
         "Load testing and capacity verification",
         "Maintenance scheduling optimization"
       ],
-      link: "/services/battery-impedance-testing"
+      link: "/services/remote-ups"
     },
     {
       id: 4,
-      title: "Earth Pit Testing",
+      title: "UPS Hire",
       icon: <FiLayers className="h-8 w-8" />,
       description: "Comprehensive grounding system testing and analysis to ensure electrical safety and regulatory compliance.",
       features: [
@@ -55,12 +55,12 @@ export default function ServicesPage() {
         "Grounding system design verification",
         "Lightning protection assessment"
       ],
-      link: "/services/earth-pit-testing"
+      link: "/services/ups-hire"
     },
     {
       id: 5,
-      title: "Socket Testing",
-      icon: <FiPlug className="h-8 w-8" />,
+      title: "UPS Relocation & Disposal",
+    //   icon: <FiPlug className="h-8 w-8" />,
       description: "Electrical outlet safety and performance testing to ensure safe operation and regulatory compliance.",
       features: [
         "Electrical socket safety testing",
@@ -68,11 +68,11 @@ export default function ServicesPage() {
         "Polarity and wiring verification",
         "Power quality assessment"
       ],
-      link: "/services/socket-testing"
+      link: "/services/relocation"
     },
     {
       id: 6,
-      title: "Specialised Services",
+      title: "Load Bank Testing",
       icon: <FiTool className="h-8 w-8" />,
       description: "Expert solutions for unique electrical challenges and complex requirements that demand specialized knowledge.",
       features: [
@@ -81,11 +81,11 @@ export default function ServicesPage() {
         "Industrial automation integration",
         "Energy management systems"
       ],
-      link: "/services/specialised-services"
+      link: "/services/testing"
     },
     {
       id: 7,
-      title: "Maintenance & AMC Services",
+      title: "Integrated System Testing",
       icon: <FiCalendar className="h-8 w-8" />,
       description: "Comprehensive electrical maintenance and Annual Maintenance Contract services to ensure system reliability.",
       features: [
@@ -98,7 +98,7 @@ export default function ServicesPage() {
     },
     {
       id: 8,
-      title: "AMC Offers to Customers",
+      title: "Energy Audit",
       icon: <FiGift className="h-8 w-8" />,
       description: "Exclusive benefits and rewards for our valued AMC customers with special offers and comprehensive coverage.",
       features: [
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         "Comprehensive coverage options",
         "Value-added services"
       ],
-      link: "/services/amc-offers"
+      link: "/services/audit"
     }
   ];
 
