@@ -22,10 +22,9 @@ export default function Home() {
         <HeroSection />
       </section>
       <About />
-           <Solutions />
+      <Solutions />
       <Services />
       <DeltaPartner />
- 
       <Testimonials />
 
     </>

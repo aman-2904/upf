@@ -20,7 +20,9 @@ const AnimatedChatbot = () => {
         "Get a Quote",
         "Our Services",
         "Contact Info",
-        "Business Hours"
+        "Business Hours",
+        "About Us",
+        "changes in pricing"
     ];
 
     const botResponses = {
