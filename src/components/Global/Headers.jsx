@@ -74,7 +74,7 @@ const Headers = () => {
         },
         {
             title: "UPS Maintenance Contracts",
-            description: "We at MSPL group provides Comprehensive UPS maintenance contracts designed to your specific power requirements, ensuring reliable UPS service, annual maintenance, expert guidance on how to maintain your UPS, and a thorough UPS maintenance checklist.",
+            description: "We at Upflair group provides Comprehensive UPS maintenance contracts designed to your specific power requirements, ensuring reliable UPS service, annual maintenance, expert guidance on how to maintain your UPS, and a thorough UPS maintenance checklist.",
             href: "/services/ups-maintenance"
         },
         {

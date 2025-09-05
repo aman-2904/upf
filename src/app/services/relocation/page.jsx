@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import { FiPlug, FiShield, FiAlertCircle, FiCheckSquare, FiTool } from "react-icons/fi";
+import { FiPower, FiShield, FiAlertCircle, FiCheckSquare, FiTool } from "react-icons/fi";
 
 export default function SocketTesting() {
   const sections = [
     {
       id: 1,
       title: "Electrical Socket Safety Testing",
-      icon: <FiPlug className="h-8 w-8" />,
+  icon: <FiPower className="h-8 w-8" />, 
       paragraphs: [
         "Comprehensive electrical socket testing ensures that all power outlets provide safe and reliable electrical connections while meeting strict safety standards and regulatory requirements for residential and commercial installations.",
         "Visual inspection and physical examination identify obvious defects such as damaged faceplates, loose mounting, burned contacts, or improper installation that could create safety hazards or operational problems.",
