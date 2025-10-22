@@ -94,7 +94,7 @@ export default function ServicesPage() {
         "Predictive maintenance services",
         "Maintenance management systems"
       ],
-      link: "/services/maintenance-amc"
+      link: "/services/testing"
     },
     {
       id: 8,

@@ -11,7 +11,7 @@ const Headers = () => {
     const handleConnectNow = () => {
         const contactSection = document.getElementById('contact');
         if (contactSection) {
-            contactSection.scrollIntoView({ 
+            contactSection.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -19,7 +19,7 @@ const Headers = () => {
     };
 
     const solutionCategories = [
-         {
+        {
             title: "All Solutions",
             description: "Comprehensive energy solutions for residential and commercial spaces",
             href: "/solutions"
@@ -67,7 +67,7 @@ const Headers = () => {
     ];
 
     const serviceCategories = [
-         {
+        {
             title: "All Services",
             description: "Our Consulting Services are a suite of offerings that help you construct and smoothly adopt an enterprise-ready architecture.",
             href: "/services"
@@ -123,9 +123,9 @@ const Headers = () => {
                     {/* ✅ Replace text with an image */}
                     <Link href="/">
                         <Image
-                            src="/logo.png"   
+                            src="/logo.png"
                             alt="CDS Logo"
-                            width={140}     
+                            width={140}
                             height={40}
                             priority
                         />
@@ -140,75 +140,79 @@ const Headers = () => {
                     <a href="/about" className="hover:text-blue-700 transition cursor-pointer">
                         About Us
                     </a>
-                    
+
                     {/* Solutions Dropdown */}
-                    <div 
-                        className="relative"
+                    <div
+                        className="relative group"
                         onMouseEnter={() => setIsSolutionsOpen(true)}
                         onMouseLeave={() => setIsSolutionsOpen(false)}
                     >
-                        <button className="flex items-center gap-1 hover:text-blue-700 transition cursor-pointer">
+                        <button className="flex items-center gap-1 hover:text-blue-700 transition cursor-pointer py-2">
                             Solutions
                             <FiChevronDown className={`transition-transform duration-200 ${isSolutionsOpen ? 'rotate-180' : ''}`} />
                         </button>
-                        
+
                         {/* Solutions Dropdown Menu */}
                         {isSolutionsOpen && (
-                            <div className="absolute top-full -left-140 mt-2 w-[1200px] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
-                                <div className="p-6">
-                                    <h3 className="text-lg font-semibold text-gray-800 mb-4">SOLUTION CATEGORIES</h3>
-                                    <div className="grid grid-cols-4 gap-6">
-                                        {solutionCategories.map((solution, index) => (
-                                            <a
-                                                key={index}
-                                                href={solution.href}
-                                                className="block p-4 rounded-lg hover:bg-gray-50 transition-colors group"
-                                            >
-                                                <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
-                                                    {solution.title}
-                                                </h4>
-                                                <p className="text-sm text-gray-600 leading-relaxed">
-                                                    {solution.description}
-                                                </p>
-                                            </a>
-                                        ))}
+                            <div className="absolute top-full -left-140 pt-2 w-[1200px] z-50">
+                                <div className="bg-white border border-gray-200 rounded-lg shadow-lg">
+                                    <div className="p-6">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">SOLUTION CATEGORIES</h3>
+                                        <div className="grid grid-cols-4 gap-6">
+                                            {solutionCategories.map((solution, index) => (
+                                                <a
+                                                    key={index}
+                                                    href={solution.href}
+                                                    className="block p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+                                                >
+                                                    <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                                        {solution.title}
+                                                    </h4>
+                                                    <p className="text-sm text-gray-600 leading-relaxed">
+                                                        {solution.description}
+                                                    </p>
+                                                </a>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         )}
                     </div>
-                    
+
                     {/* Services Dropdown */}
-                    <div 
-                        className="relative"
+                    <div
+                        className="relative group"
                         onMouseEnter={() => setIsServicesOpen(true)}
                         onMouseLeave={() => setIsServicesOpen(false)}
                     >
-                        <button className="flex items-center gap-1 hover:text-blue-700 transition cursor-pointer container mx-auto">
+                        <button className="flex items-center gap-1 hover:text-blue-700 transition cursor-pointer py-2">
                             Services
                             <FiChevronDown className={`transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
                         </button>
-                        
+
                         {/* Dropdown Menu */}
                         {isServicesOpen && (
-                            <div className="absolute top-full -left-190 mt-2 w-[1300px] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
-                                <div className="p-6">
-                                    <h3 className="text-lg font-semibold text-gray-800 mb-4">SERVICE CATEGORIES</h3>
-                                    <div className="grid grid-cols-4 gap-6">
-                                        {serviceCategories.map((service, index) => (
-                                            <a
-                                                key={index}
-                                                href={service.href}
-                                                className="block p-4 rounded-lg hover:bg-gray-50 transition-colors group"
-                                            >
-                                                <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
-                                                    {service.title}
-                                                </h4>
-                                                <p className="text-sm text-gray-600 leading-relaxed">
-                                                    {service.description}
-                                                </p>
-                                            </a>
-                                        ))}
+                            <div className="absolute top-full -left-190 pt-2 w-[1300px] z-50">
+                                <div className="bg-white border border-gray-200 rounded-lg shadow-lg">
+                                    <div className="p-6">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">SERVICE CATEGORIES</h3>
+                                        <div className="grid grid-cols-4 gap-6">
+                                            {serviceCategories.map((service, index) => (
+                                                <a
+                                                    key={index}
+                                                    href={service.href}
+                                                    className="block p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+                                                >
+                                                    <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                                        {service.title}
+                                                    </h4>
+                                                    <p className="text-sm text-gray-600 leading-relaxed">
+                                                        {service.description}
+                                                    </p>
+                                                </a>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
